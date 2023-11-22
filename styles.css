@@ -1,0 +1,92 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 10vh;
+  background-color: black;
+}
+
+body {
+  margin: auto;
+  font-family: "VT323", sans-serif;
+  color: #03d70e;
+}
+
+a {
+  text-decoration: none;
+  color: #03d70e;
+  font-size: 20px;
+}
+
+.nav-header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+}
+
+.placeholder {
+  overflow: auto;
+}
+
+.section {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-section h1 {
+  overflow: hidden;
+  border-right: 0.15em solid #03d70e;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #03d70e;
+  }
+}
+
+.my-work-container {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 600px) {
+  .my-work-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .my-work-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
