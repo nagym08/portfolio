@@ -1,55 +1,68 @@
 <!DOCTYPE html>
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Portfolio of Miklós Nagy" />
-    <meta name="author" content="Miklós Nagy" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323" />
-    <title>My Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Portfolio of Miklós Nagy" />
+  <meta name="author" content="Miklós Nagy" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323" />
+  <script src="scripts.js" defer></script>
+  <title>My Portfolio</title>
 </head>
 
 <body>
-    <nav class="nav-header">
-        <a href="#home">&ltHome&gt</a>
-        <a href="#about-me">&ltAbout Me&gt</a>
-        <a href="#my-work">&ltMy work&gt</a>
-        <a href="#contact">&ltContact&gt</a>
-    </nav>
-    <main>
-        <div class="placeholder">
-            <section id="home" class="section">
-                <div class="home-section">
-                    <h1>Hello, my name is Miklós Nagy.</h1>
-                </div>
-            </section>
-            <section id="about-me" class="section">
-                <h1>&ltAbout Me&gt</h1>
-                <p>I'm Miklós, a full-stack engineer from Hungary. I'm working mostly with .NET, Angular and React.</p>
-            </section>
-            <section id="my-work" class="section">
-                <h1>&ltMy work&gt</h1>
-                <div class="my-work-container">
-                    <div>
-                        <span>Üvegkapu</span>
-                        <img src="img/uvegkapu.png" />
-                    </div>
-                    <div>
-                        <span>TITÁSZ</span>
-                        <img src="img/titasz.png" />
-                    </div>
-                    <div>
-                        <span>Feather</span>
-                        <img src="img/feather.png" />
-                    </div>
-                </div>
-            </section>
-            <section id="contact" class="section">
-                <h1>&ltContact&gt</h1>
-                <p>Send me an e-mail to: <button onclick="window.open('mailto:nagy.miklos95@outlook.com')">nagy.miklos95@outlook.com</button></p>
-                <p>LinkedIn: <a href="">My LinkedIn</a></p>
-            </section>
+  <nav class="nav-header">
+    <a href="#home">&ltHome&gt</a>
+    <a href="#about-me">&ltAbout Me&gt</a>
+    <a href="#my-work">&ltMy work&gt</a>
+    <a href="#contact">&ltContact&gt</a>
+  </nav>
+  <main>
+    <div class="placeholder">
+      <section id="home" class="section">
+        <div class="home-section">
+          <h1>Hello, my name is Miklós Nagy.</h1>
         </div>
-    </main>
+      </section>
+      <section id="about-me" class="section">
+        <h1>&ltAbout Me&gt</h1>
+        <p>
+          I'm Miklós, a full-stack engineer from Hungary. I'm working mostly
+          with .NET and Angular.
+        </p>
+      </section>
+      <section id="my-work" class="section">
+        <h1>&ltMy work&gt</h1>
+        <div class="my-work-container" data-work-container>
+          <button data-carousel-button="prev">&#8249;</button>
+          <div data-works>
+            <div class="slide" data-active-work>
+              <span>Üvegkapu</span>
+              <img src="img/uvegkapu.png" />
+            </div>
+            <div class="slide">
+              <span>TITÁSZ</span>
+              <img src="img/titasz.png" />
+            </div>
+            <div class="slide">
+              <span>Feather</span>
+              <img src="img/feather.png" />
+            </div>
+          </div>
+          <button data-carousel-button="next">&#8250;</button>
+        </div>
+      </section>
+      <section id="contact" class="section">
+        <h1>&ltContact&gt</h1>
+        <p>
+          Send me an e-mail to:
+          <button onclick="window.open('mailto:nagy.miklos95@outlook.com')">
+            nagy.miklos95@outlook.com
+          </button>
+        </p>
+        <p>LinkedIn: <a href="">My LinkedIn</a></p>
+      </section>
+    </div>
+  </main>
 </body>
