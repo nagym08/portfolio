@@ -13,6 +13,19 @@ body {
   font-size: var(--default-font-size);
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+}
+
+
 a {
   text-decoration: none;
   color: var(--main-color);
