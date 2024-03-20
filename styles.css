@@ -2,19 +2,21 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 10vh;
   background-color: black;
+  --main-color: #03d70e;
+  --default-font-size: 25px;
 }
 
 body {
   margin: auto;
   font-family: "VT323", sans-serif;
-  color: #03d70e;
-  font-size: 25px;
+  color: var(--main-color);
+  font-size: var(--default-font-size);
 }
 
 a {
   text-decoration: none;
-  color: #03d70e;
-  font-size: 25px;
+  color: var(--main-color);
+  font-size: var(--default-font-size);
 }
 
 .nav-header {
@@ -48,7 +50,7 @@ a {
 
 .home-section h1 {
   overflow: hidden;
-  border-right: 0.15em solid #03d70e;
+  border-right: 0.15em solid var(--main-color);
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: 0.15em;
@@ -70,22 +72,22 @@ a {
     border-color: transparent;
   }
   50% {
-    border-color: #03d70e;
+    border-color: var(--main-color);
   }
 }
 
 button {
   background: none;
   border: none;
-  color: #03d70e;
+  color: var(--main-color);
   border-radius: .25rem;
   font-family: "VT323", sans-serif;
-  font-size: 25px;
+  font-size: var(--default-font-size);
 }
 
 button:hover {
   cursor: pointer;
-  outline: #03d70e solid 1px;
+  outline: var(--main-color) solid 1px;
 }
 
 .carousel-button {
