@@ -79,6 +79,8 @@ button {
   border: none;
   color: #03d70e;
   border-radius: .25rem;
+  font-family: "VT323", sans-serif;
+  font-size: 25px;
 }
 
 button:hover {
